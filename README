@@ -1,0 +1,4 @@
+rdflib-pyld-compat
+==================
+
+Support data conversion between `rdflib` and `pyld` Python libraries.

@@ -1,0 +1,6 @@
+build
+dist
+htmlcov
+.cache
+.coverage
+*.egg-info
