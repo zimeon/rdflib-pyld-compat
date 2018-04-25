@@ -14,7 +14,7 @@ Limitations
 
 This code was developed to support a particular application and then pulled out as I needed it a second time. I haven't thought hard about the general case and am sure that are additional limitations beyond those I know about. Known limitations:
 
-  * assumes the `URIRefs` in an `rdflib` graph do not need expansion with a `NamespaceManager`
+* assumes the `URIRefs` in an `rdflib` graph do not need expansion with a `NamespaceManager`
 
 Contributing
 ------------
