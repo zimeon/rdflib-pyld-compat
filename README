@@ -1,6 +1,8 @@
 rdflib-pyld-compat
 ==================
 .. image:: https://travis-ci.org/zimeon/rdflib-pyld-compat.svg?branch=master
-    :target: https://travis-ci.org/zimeon/rdflib-pyld-compat
-    
+   :target: https://travis-ci.org/zimeon/rdflib-pyld-compat
+.. image:: https://coveralls.io/repos/github/zimeon/rdflib-pyld-compat/badge.svg?branch=master
+   :target: https://coveralls.io/github/zimeon/rdflib-pyld-compat?branch=master
+
 Support data conversion between `rdflib` and `pyld` Python libraries.
