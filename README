@@ -1,4 +1,6 @@
 rdflib-pyld-compat
 ==================
-
+.. image:: https://travis-ci.org/zimeon/rdflib-pyld-compat.svg?branch=master
+    :target: https://travis-ci.org/zimeon/rdflib-pyld-compat
+    
 Support data conversion between `rdflib` and `pyld` Python libraries.
