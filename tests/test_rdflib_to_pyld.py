@@ -27,6 +27,18 @@ class TestCompat(unittest.TestCase):
         self.assertFalse('@type' in ss)
         self.assertEqual(ss['@value'], 'algae')
 
+
+    def test01b_unicode(self):
+        g = Graph()
+        name = u'R\xf6ttigen'
+        g += [(URIRef('s2'), URIRef('p2'), Literal(name))]
+        j = pyld_jsonld_from_rdflib_graph(g)
+        self.assertEqual(len(j), 1)
+        print(j)
+        val = j[0]['p2'][0]['@value']
+        self.assertEqual(val, name)
+
+
     def test02_rdflib_graph_from_pyld_jsonld(self):
         """Convert rdflib graphs to PyLD."""
         j = [{'@id': 'http://example.org/s1', 'http://example.org/p1': [{'@id': 'http://example.org/o1'}]}]

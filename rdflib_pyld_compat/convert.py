@@ -37,7 +37,7 @@ def _rdflib_term_to_pyld_term(term):
       `datatype` optional data type URI for literal, else None
     """
     t = {'type': 'IRI',
-         'value': str(term)}
+         'value': term.toPython()}
     if (isinstance(term, BNode)):
         t['type'] = 'blank node'
     elif (isinstance(term, Literal)):
