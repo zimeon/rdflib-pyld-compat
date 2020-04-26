@@ -29,7 +29,9 @@ limitations beyond those I know about. Known limitations:
 History
 -------
 
-Last version to work with Python 2.7 was `rdflib-pyld-compat==0.0.2
+Last version to work with Python 2.7 was `v0.0.2
+<https://github.com/zimeon/rdflib-pyld-compat/releases/tag/v0.0.2>`_, install with
+`pip install rdflib-pyld-compat==0.0.2
 <https://pypi.org/project/rdflib-pyld-compat/0.0.2/>`_
 
 Contributing
