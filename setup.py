@@ -58,8 +58,9 @@ setup(
     long_description=open('README').read(),
     url='http://github.com/zimeon/rdflib-pyld-compat',
     install_requires=[
+        "pyparsing<3.0.0",  # Used by rdflib, 3.0.0 does not work with Python 2.7
         "rdflib>=4.2.0",
-        "pyld<2.0.0",  # Unpinning will require Python3.6 or greater
+        "pyld<2.0.0",  # Unpinning will require Python 3.6 or greater
         "testfixtures"
     ],
     test_suite="tests",
