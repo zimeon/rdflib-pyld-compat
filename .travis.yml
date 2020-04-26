@@ -12,6 +12,6 @@ script:
   - pep8 --ignore=E501 rdflib_pyld_compat tests *.py
   - pep257 rdflib_pyld_compat
   - rst-lint README
-  - coverage run --source=mdmux setup.py test
+  - coverage run --source=rdflib_pyld_compat setup.py test
 after_success:
   - coveralls
