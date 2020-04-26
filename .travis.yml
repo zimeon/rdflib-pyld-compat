@@ -1,16 +1,14 @@
 language: python
 python:
-  - "2.7"
-  - "3.5"
   - "3.6"
   - "3.7"
   - "3.8"
 install:
-  - pip install coveralls pep8 pep257 restructuredtext_lint testfixtures
+  - pip install coveralls pycodestyle pep257 restructuredtext_lint testfixtures
   - python setup.py install
 script:
   - python setup.py test
-  - pep8 --ignore=E501 rdflib_pyld_compat tests *.py
+  - pycodestyle --ignore=E501,W503 rdflib_pyld_compat tests *.py
   - pep257 rdflib_pyld_compat
   - rst-lint README
   - coverage run --source=rdflib_pyld_compat setup.py test

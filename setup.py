@@ -37,6 +37,7 @@ class Coverage(Command):
         os.system("coverage html")
         print("See htmlcov/index.html for details.")
 
+
 setup(
     name='rdflib-pyld-compat',
     version=version,
@@ -46,8 +47,7 @@ setup(
                  "License :: OSI Approved :: Apache Software License",
                  "Operating System :: OS Independent",
                  "Programming Language :: Python",
-                 "Programming Language :: Python :: 2.7",
-                 "Programming Language :: Python :: 3.5",
+                 "Programming Language :: Python :: 3",
                  "Programming Language :: Python :: 3.6",
                  "Programming Language :: Python :: 3.7",
                  "Programming Language :: Python :: 3.8",
@@ -58,9 +58,8 @@ setup(
     long_description=open('README').read(),
     url='http://github.com/zimeon/rdflib-pyld-compat',
     install_requires=[
-        "pyparsing<3.0.0",  # Used by rdflib, 3.0.0 does not work with Python 2.7
         "rdflib>=4.2.0",
-        "pyld<2.0.0",  # Unpinning will require Python 3.6 or greater
+        "pyld",
         "testfixtures"
     ],
     test_suite="tests",

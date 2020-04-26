@@ -11,4 +11,4 @@ rdflib_graph_from_pyld_jsonld(json)
 
 from .convert import pyld_jsonld_from_rdflib_graph, rdflib_graph_from_pyld_jsonld
 
-__version__ = '0.0.2'
+__version__ = '0.1.0'

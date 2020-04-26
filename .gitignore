@@ -4,3 +4,4 @@ htmlcov
 .cache
 .coverage
 *.egg-info
+.eggs
