@@ -15,6 +15,11 @@ is not trivial to use the powerful RDF support of rdflib in conjuction with the 
 implementation of PyLD. This code is designed to provide a bridge between rdflib and PyLD in-memory
 formats, avoiding the need to serialize and then re-parse the data.
 
+*N.B.* - This code is currently pinned to `PyLD 1.0.5
+<https://pypi.org/project/PyLD/1.0.5/>`_ so that it works with Python 2.7. 
+If there is any further development this pin should be removed and then
+it will work only with Python 3.6 and up.
+
 Limitations
 -----------
 
