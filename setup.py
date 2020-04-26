@@ -47,9 +47,10 @@ setup(
                  "Operating System :: OS Independent",
                  "Programming Language :: Python",
                  "Programming Language :: Python :: 2.7",
-                 "Programming Language :: Python :: 3.4",
                  "Programming Language :: Python :: 3.5",
                  "Programming Language :: Python :: 3.6",
+                 "Programming Language :: Python :: 3.7",
+                 "Programming Language :: Python :: 3.8",
                  "Topic :: Software Development :: Libraries :: Python Modules"],
     author='Simeon Warner',
     author_email='simeon.warner@cornell.edu',
@@ -58,7 +59,7 @@ setup(
     url='http://github.com/zimeon/rdflib-pyld-compat',
     install_requires=[
         "rdflib>=4.2.0",
-        "pyld",
+        "pyld<2.0.0",  # Unpinning will require Python3.6 or greater
         "testfixtures"
     ],
     test_suite="tests",
